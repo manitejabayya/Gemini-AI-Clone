@@ -1,4 +1,3 @@
-/* src/App.css */
 .app {
     display: flex;
     height: 100vh;
@@ -6,8 +5,7 @@
     background-color: #f8f9fa;
   }
   
-  /* src/Components/SideBar/Sidebar.css */
-  .sidebar {
+.sidebar {
     width: 300px;
     height: 100%;
     display: flex;
@@ -340,3 +338,90 @@
       transform: rotate(360deg);
     }
   }
+/* General responsive styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .app {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .new-chat-button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .suggestions-container {
+        grid-template-columns: 1fr;
+    }
+
+    .message {
+        max-width: 100%;
+    }
+
+    .prompt-form {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .prompt-input {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .attachment-button,
+    .send-button,
+    .mic-button {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    .new-chat-button {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+
+    .suggestions-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .message {
+        max-width: 90%;
+    }
+}
+
+/* Large devices (desktops, 1024px and above) */
+@media (min-width: 1024px) {
+    .sidebar {
+        width: 300px;
+    }
+
+    .suggestions-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .message {
+        max-width: 80%;
+    }
+}

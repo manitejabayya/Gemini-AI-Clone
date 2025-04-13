@@ -151,3 +151,87 @@
   .history-button:hover {
     background-color: #e0e0e0;
   }
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .sidebar {
+      width: 250px;
+    }
+  
+    .sidebar-header {
+      padding: 12px;
+    }
+  
+    .sidebar h1 {
+      font-size: 18px;
+    }
+  
+    .new-chat-button {
+      margin: 12px;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .sidebar-history {
+      padding: 6px 12px;
+    }
+  
+    .history-item {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .sidebar-footer {
+      padding: 12px;
+    }
+  
+    .help-button,
+    .history-button {
+      padding: 6px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .sidebar-header {
+      padding: 8px;
+    }
+  
+    .sidebar h1 {
+      font-size: 16px;
+    }
+  
+    .new-chat-button {
+      margin: 8px;
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .sidebar-history {
+      padding: 4px 8px;
+    }
+  
+    .history-item {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .sidebar-footer {
+      padding: 8px;
+    }
+  
+    .help-button,
+    .history-button {
+      padding: 4px;
+    }
+  
+    .floating-menu-button {
+      top: 8px;
+      left: 8px;
+      padding: 6px;
+    }
+  }
